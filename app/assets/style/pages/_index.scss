@@ -21,41 +21,35 @@
 }
 
 /* service */
-.bg-primary-light {
-  background: $color_primary_light;
 
-  .services {
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  h2 {
+    color: $color_primary_dark;
+  }
+
+  .row {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 60px 0 80px 0;
+    // flex-wrap: wrap;
 
-    h2 {
-      color: $color_primary_dark;
-    }
-
-    .row {
+    .col-3 {
+      max-width: 25%;
       display: flex;
-      // flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      padding-right: 30px;
 
-      .col-3 {
-        max-width: 25%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-right: 30px;
+      .icons {
+        font-size: 100px;
+        color: $color_primary_dark;
+      }
 
-        .icons {
-          max-width: 100px;
-          height: 100px;
-          line-height: 84px;
-          padding: 8px;
-        }
-
-        h3 {
-          color: $color_primary_dark;
-          font-weight: bold;
-        }
+      h3 {
+        color: $color_primary_dark;
+        font-weight: bold;
       }
     }
   }
@@ -63,8 +57,6 @@
 
 /* classic-series */
 .classic-series {
-  padding: 60px 0 80px 0;
-
   h2 {
     color: $color_primary_dark;
   }
@@ -77,22 +69,18 @@
       max-width: 635px;
       height: 100%;
     }
+
     .slogn {
       padding: 0 32px;
-
-      .icon {
-        width: 48px;
-        height: 48px;
-        line-height: 63px;
-        padding: 2px;
-      }
-
+      height: 72px;
+      display: flex;
+      align-items: center;
+      color: $color_primary;
       h3 {
-        color: $color_primary;
         text-transform: uppercase;
         font-style: italic;
         font-weight: 900;
-        line-height: 1.3;
+        margin-left: 8px;
       }
     }
   }
@@ -106,7 +94,6 @@
   background: url(../images/bg.png) center center no-repeat;
   background-size: cover;
   height: 705px;
-  padding: 60px 0 80px 0;
 
   h2 {
     color: #fff;
@@ -132,12 +119,16 @@
       height: 455px;
       position: relative;
     }
-
     .mask {
       width: 100%;
       height: 100%;
       background: #fff;
       opacity: 0.5;
+      cursor: pointer;
+      transition: all .3s ease;
+      &:hover {
+        opacity: 0.1;
+      }
     }
 
     h3 {
@@ -154,8 +145,6 @@
 
 /*  recommend */
 .recommend {
-  padding: 60px 0 80px 0;
-
   h2 {
     color: $color_primary_dark;
     text-align: center;
@@ -168,11 +157,102 @@
 
   .card {
     width: 23%;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
 
-    .card-header {
-      width: 100%;
-      height: 256px ;
-      
+    img {
+      border-radius: 4px 4px 0 0;
+    }
+
+    &-body {
+      padding: 16px;
+      height: 204px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .card-content {
+        color: $color_gray_dark;
+
+        .card-text {
+          max-width: 223px;
+        }
+      }
+    }
+
+    &-footer {
+      color: $color_gray_light;
+    }
+  }
+}
+
+/* contact */
+.contact {
+  max-width: 730px;
+  margin: auto;
+
+  p {
+    margin-bottom: 20px;
+  }
+}
+
+.form-group {
+  label {
+    display: inline-block;
+    margin-bottom: 4px;
+  }
+
+  ::placeholder {
+    font-size: 16px;
+    color: #000;
+    opacity: 0.2;
+  }
+  .input {
+    width: 100%;
+    padding: 12px 16px 14px 12px;
+    background: $color_primary_light;
+    border: 1px solid #000;
+  }
+  .textarea {
+    width: 100%;
+    padding: 12px 16px 14px 12px;
+    background: $color_primary_light;
+    border: 1px solid #000;
+    height: 136px;
+    resize: none;
+  }
+}
+
+.checkbox-gruop {
+  display: flex;
+  align-items: center;
+  .checkbox {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+  }
+
+  .check-label {
+    margin-bottom: 0;
+    margin-left: 4px;
+  }
+}
+
+.submit-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .submit {
+    width: 350px;
+    padding: 16px 0;
+    border: none;
+    background-color: $color_primary;
+    color: #fff;
+    cursor: pointer;
+    &:hover {
+      background-color: $color_primary_dark;
     }
   }
 }
