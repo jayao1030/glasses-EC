@@ -5,17 +5,38 @@
   background-size: cover;
   height: 840px;
 
-  .title {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    height: 100%;
-    text-align: right;
-    color: $color_primary_dark;
+  @include pad {
+    background-image: url(../images/banner-sm.png);
+  }
 
-    span {
-      display: block;
+  @include mobile {
+    height: 394px;
+  }
+}
+
+.banner__content {
+  height: 100%;
+
+  &--title {
+    @include pad {
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+
+  &--sub-title {
+    display: block;
+
+    @include pad {
+      font-size: 48px;
+    }
+
+    @include mobile {
+      font-size: 32px;
     }
   }
 }
@@ -23,69 +44,85 @@
 /* service */
 
 .services {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  h2 {
-    color: $color_primary_dark;
+  padding: 60px 0 80px 0;
+  @include pad {
+    padding-top: 40px;
+    padding-bottom: 24px;
   }
 
-  .row {
-    display: flex;
-    // flex-wrap: wrap;
+  @include mobile {
+    padding-top: 32px;
+    padding-bottom: 8px;
+  }
+}
 
-    .col-3 {
-      max-width: 25%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-right: 30px;
+.col-3 {
+  width: 25%;
+  padding: 0 15px;
+  text-align: center;
 
-      .icons {
-        font-size: 100px;
-        color: $color_primary_dark;
-      }
+  @include pad {
+    width: 50%;
+    padding: 0;
+    margin-bottom: 32px;
+  }
+  @include mobile {
+    width: 100%;
+  }
 
-      h3 {
-        color: $color_primary_dark;
-        font-weight: bold;
-      }
+  .icons {
+    font-size: 100px;
+  }
+  p {
+    @include pad {
+      padding: 0 52.5px;
     }
   }
 }
 
 /* classic-series */
-.classic-series {
-  h2 {
-    color: $color_primary_dark;
-  }
-
+.classic {
   li {
-    display: flex;
-    align-items: center;
-
-    .classic-img {
-      max-width: 635px;
+    position: relative;
+    @include pad {
+      margin-bottom: 8px;
+    }
+    .classic__img {
       height: 100%;
+      max-width: 57%;
+      @include mobile {
+        max-width: 100%;
+      }
     }
 
     .slogn {
       padding: 0 32px;
       height: 72px;
-      display: flex;
-      align-items: center;
-      color: $color_primary;
+      @include mobile {
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      span {
+        @include pad {
+          font-size: 36px;
+        }
+      }
       h3 {
         text-transform: uppercase;
-        font-style: italic;
-        font-weight: 900;
-        margin-left: 8px;
+        @include pad {
+          font-size: 28px;
+        }
       }
     }
   }
   .row-reverse {
     flex-direction: row-reverse;
+    @include pad {
+      flex-direction: row;
+    }
   }
 }
 
@@ -93,96 +130,76 @@
 .co-branded {
   background: url(../images/bg.png) center center no-repeat;
   background-size: cover;
-  height: 705px;
 
-  h2 {
-    color: #fff;
-    text-align: center;
-  }
-
-  .row {
-    display: flex;
-    justify-content: space-between;
-
-    .co-branded-left {
-      background: url(../images/product-8.png) center center no-repeat;
-      background-size: cover;
-      width: 48.5%;
-      height: 455px;
-      position: relative;
-    }
-
-    .co-branded-right {
-      background: url(../images/product-9.png) center center no-repeat;
-      background-size: cover;
-      width: 48.5%;
-      height: 455px;
-      position: relative;
-    }
-    .mask {
-      width: 100%;
-      height: 100%;
-      background: #fff;
-      opacity: 0.5;
-      cursor: pointer;
-      transition: all .3s ease;
-      &:hover {
-        opacity: 0.1;
+  .co-branded__item {
+    max-width: 48%;
+    position: relative;
+    background-color: $white;
+    @include mobile {
+      max-width: 100%;
+      &:first-child {
+        margin-bottom: 16px;
       }
     }
-
-    h3 {
-      color: $color_primary;
-      position: absolute;
-      width: 100%;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
+    .co-branded__img {
+      opacity: 0.5;
+      transition: all 0.3s;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  h3 {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include pad {
+      font-size: 32px;
     }
   }
 }
 
 /*  recommend */
-.recommend {
-  h2 {
-    color: $color_primary_dark;
-    text-align: center;
+
+.recommend__card {
+  width: 23%;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  @include pad {
+    width: 48%;
+    margin-bottom: 32px;
+    &:nth-child(3),
+    &:nth-child(4) {
+      margin-bottom: 0;
+    }
+    @include mobile {
+      width: 100%;
+    }
   }
-}
+  @include mobile {
+    margin-bottom: 16px;
+    &:nth-child(3) {
+      margin-bottom: 16px;
+    }
+  }
 
-.row {
-  display: flex;
-  justify-content: space-between;
-
-  .card {
-    width: 23%;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
-    border: 1px solid #dee2e6;
-    border-radius: 4px;
-
+  .recommend__card--header {
     img {
       border-radius: 4px 4px 0 0;
-    }
-
-    &-body {
-      padding: 16px;
-      height: 204px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-
-      .card-content {
-        color: $color_gray_dark;
-
-        .card-text {
-          max-width: 223px;
-        }
+      @include pad {
+        width: 100%;
       }
     }
+  }
+  .recommend__card--body {
+    padding: 16px;
+    height: 204px;
 
-    &-footer {
-      color: $color_gray_light;
+    @include pad {
+      padding: 16px 24px;
     }
   }
 }
@@ -191,9 +208,18 @@
 .contact {
   max-width: 730px;
   margin: auto;
-
-  p {
+  @include pad {
+    max-width: 450px;
+  }
+  @include mobile {
+    max-width: auto;
+    padding: 0 15px;
+  }
+  .contact__subtitle {
     margin-bottom: 20px;
+    @include pad {
+      font-size: 16px;
+    }
   }
 }
 
@@ -201,18 +227,27 @@
   label {
     display: inline-block;
     margin-bottom: 4px;
+    @include pad {
+      font-size: 14px;
+    }
   }
 
   ::placeholder {
     font-size: 16px;
     color: #000;
     opacity: 0.2;
+    @include pad {
+      font-size: 14px;
+    }
   }
   .input {
     width: 100%;
-    padding: 12px 16px 14px 12px;
+    padding: 16px 16px 17px 12px;
     background: $color_primary_light;
     border: 1px solid #000;
+    @include pad {
+      padding: 10px 16px 9px 12px;
+    }
   }
   .textarea {
     width: 100%;
@@ -221,6 +256,9 @@
     border: 1px solid #000;
     height: 136px;
     resize: none;
+    @include pad {
+      height: 100px;
+    }
   }
 }
 
@@ -231,6 +269,11 @@
     display: inline-block;
     width: 24px;
     height: 24px;
+    @include pad {
+      width: 18px;
+      height: 18px;
+      margin-bottom: 25px;
+    }
   }
 
   .check-label {
@@ -252,7 +295,16 @@
     color: #fff;
     cursor: pointer;
     &:hover {
-      background-color: $color_primary_dark;
+      background-color: $gray-600;
+    }
+
+    @include pad {
+      max-width: 210px;
+      padding: 12px 0;
+    }
+    @include mobile {
+      max-width: 165px;
+      padding: 12px 0;
     }
   }
 }

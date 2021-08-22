@@ -1,0 +1,39 @@
+.pagination {
+  display: flex;
+  .page-link {
+    width: 100%;
+    padding: 12px 16px;
+    color: $black;
+    border: 1px solid $gray-500;
+
+    &:hover {
+      background: $black;
+      color: $white;
+    }
+
+    @include mobile {
+      padding: 10px 10px;
+
+    }
+  }
+
+  .pre-page,
+  .next-page {
+    @include mobile {
+      padding: 10px 5px;
+    } 
+  }
+
+  .active {
+    background: $black;
+    border-bottom: none;
+
+    .page-link {
+      color: $white;
+    }
+  }
+
+  .next-page {
+    background-color: $gray-100;
+  }
+}

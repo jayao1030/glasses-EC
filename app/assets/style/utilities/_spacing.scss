@@ -1,0 +1,221 @@
+// 間距
+// m - margin
+// p - padding
+// t - top
+// b - bottom
+// r - right
+// l - left
+
+// 1: 8px
+// 2: 16px
+// 3: 24px
+// 4: 32px
+// 5: 40px
+// 6: 48px
+.pt {
+  &_1 {
+    padding-top: $spacer * 0.5;
+  }
+
+  &_2 {
+    padding-top: $spacer;
+  }
+
+  &_3 {
+    padding-top: $spacer * 1.5;
+  }
+
+  &_4 {
+    padding-top: $spacer * 2;
+  }
+
+  &_5 {
+    padding-top: $spacer * 2.5;
+  }
+
+  &_6 {
+    padding-top: $spacer * 3;
+  }
+}
+
+.pb {
+  &_1 {
+    padding-bottom: $spacer * 0.5;
+  }
+
+  &_2 {
+    padding-bottom: $spacer;
+  }
+
+  &_3 {
+    padding-bottom: $spacer * 1.5;
+  }
+
+  &_4 {
+    padding-bottom: $spacer * 2;
+  }
+
+  &_5 {
+    padding-bottom: $spacer * 2.5;
+  }
+
+  &_6 {
+    padding-bottom: $spacer * 3;
+  }
+}
+
+.pl {
+  &_1 {
+    padding-left: $spacer * 0.5;
+  }
+
+  &_2 {
+    padding-left: $spacer;
+  }
+
+  &_3 {
+    padding-left: $spacer * 1.5;
+  }
+
+  &_4 {
+    padding-left: $spacer * 2;
+  }
+
+  &_5 {
+    padding-left: $spacer * 2.5;
+  }
+
+  &_6 {
+    padding-left: $spacer * 3;
+  }
+}
+
+.pr {
+  &_1 {
+    padding-right: $spacer * 0.5;
+  }
+
+  &_2 {
+    padding-right: $spacer;
+  }
+
+  &_3 {
+    padding-right: $spacer * 1.5;
+  }
+
+  &_4 {
+    padding-right: $spacer * 2;
+  }
+
+  &_5 {
+    padding-right: $spacer * 2.5;
+  }
+
+  &_6 {
+    padding-right: $spacer * 3;
+  }
+}
+
+.mt {
+  &_1 {
+    margin-top: $spacer * 0.5;
+  }
+
+  &_2 {
+    margin-top: $spacer;
+  }
+
+  &_3 {
+    margin-top: $spacer * 1.5;
+  }
+
+  &_4 {
+    margin-top: $spacer * 2;
+  }
+
+  &_5 {
+    margin-top: $spacer * 2.5;
+  }
+
+  &_6 {
+    margin-top: $spacer * 3;
+  }
+}
+
+.mb {
+  &_1 {
+    margin-bottom: $spacer * 0.5;
+  }
+
+  &_2 {
+    margin-bottom: $spacer;
+  }
+
+  &_3 {
+    margin-bottom: $spacer * 1.5;
+  }
+
+  &_4 {
+    margin-bottom: $spacer * 2;
+  }
+
+  &_5 {
+   margin-bottom: $spacer * 2.5;
+  }
+
+  &_6 {
+    margin-bottom: $spacer * 3;
+  }
+}
+
+.ml {
+  &_1 {
+    margin-left: $spacer * 0.5;
+  }
+
+  &_2 {
+    margin-left: $spacer;
+  }
+
+  &_3 {
+    margin-left: $spacer * 1.5;
+  }
+
+  &_4 {
+    margin-left: $spacer * 2;
+  }
+
+  &_5 {
+    margin-left: $spacer * 2.5;
+  }
+
+  &_6 {
+    margin-left: $spacer * 3;
+  }
+}
+
+.mr {
+  &_1 {
+    margin-right: $spacer * 0.5;
+  }
+
+  &_2 {
+    margin-right: $spacer;
+  }
+
+  &_3 {
+    margin-right: $spacer * 1.5;
+  }
+
+  &_4 {
+    margin-right: $spacer * 2;
+  }
+
+  &_5 {
+    margin-right: $spacer * 2.5;
+  }
+
+  &_6 {
+    margin-right: $spacer * 3;
+  }
+}

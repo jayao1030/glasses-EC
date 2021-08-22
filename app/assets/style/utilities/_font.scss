@@ -1,0 +1,68 @@
+
+
+.font{
+  &_14 {
+    font-size: 14px;
+  }
+
+  &_20 {
+    font-size: 20px;
+  }
+  
+  &_24 {
+    font-size: 24px;
+  }
+
+  &_28 {
+    font-size: 28px;
+  }
+
+  &_32 {
+    font-size: 32px;
+  }
+
+  &_36 {
+    font-size: 36px;
+  }
+
+  &_40 {
+    font-size: 40px;
+  }
+
+  &_48 {
+    font-size: 48px;
+  }
+
+  
+  &_64 {
+    font-size: 64px;
+  }
+
+  &_72 {
+    font-size: 72px;
+  }
+}
+
+// font-weight
+.fw {
+  &_normal {
+    font-weight: 400;
+  }
+
+  &_Medium {
+    font-weight: 500;
+  }
+
+  &_bold {
+    font-weight: 700;
+  }
+
+  &_black {
+    font-weight: 900;
+  }
+}
+
+// 斜體
+.fontStyle_italic {
+  font-style: italic;
+}

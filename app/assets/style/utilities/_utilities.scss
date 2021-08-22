@@ -1,0 +1,45 @@
+.layout_padding {
+  padding: 60px 0 80px 0;
+
+    @include pad {
+      padding-top: 40px;
+      padding-bottom: 56px;
+    }
+    @include mobile {
+      padding-top: 32px;
+      padding-bottom: 40px;
+    }
+}
+
+.bg_primary {
+  background: $color_primary;
+}
+
+.bg_primary-light {
+  background: $color_primary_light;
+}
+
+.main_title {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0 auto;
+  color: $color_primary_dark;
+  margin-bottom: 40px;
+  text-align: center;
+  @include pad {
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+  @include mobile {
+    font-size: 24px;
+    margin-bottom: 28px;
+  }
+
+  
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}

@@ -8,48 +8,78 @@ current: index
 <main>
   <!-- banner -->
   <div class="banner">
-    <section class="container title">
-      <h2 class="font-64 fw-bold">
-        <span class="font-36 fw-normal">Promise-Desert 2020 早春系列</span
-        >看得清，才能看得遠
-      </h2>
+    <section
+      class="
+        container
+        banner__content
+        d_flex
+        flex_align-items-center flex_justify-flex-end flex_wrap
+        text_right text_color-primary-dark
+      "
+    >
+      <h1 class="banner__content--title font_36">
+        Promise-Desert 2020 早春系列
+        <span class="banner__content--sub-title font_64 fw_bold"
+          >看得清，才能看得遠</span
+        >
+      </h1>
     </section>
   </div>
 
   <!-- services -->
-  <div class="bg-primary-light layout-padding">
-    <section class="container services">
-      <h2 class="font-48 fw-bold mb-6">用專業的心，做專業的事</h2>
-      <ul class="row">
+  <div class="bg_primary-light">
+    <section
+      class="container services d_flex flex_justify-content-center flex_wrap"
+    >
+      <h2 class="main_title">用專業的心，做專業的事</h2>
+      <ul class="row d_flex flex_wrap">
         <li class="col-3">
-          <span class="material-icons-outlined icons mb-2"> paid </span>
-          <h3 class="font-24 mb-1">單一價格</h3>
-          <p class="font-16">
+          <span
+            class="material-icons-outlined icons mb_2 text_color-primary-dark"
+          >
+            paid
+          </span>
+          <h3 class="font_24 mb_1 text_color-primary-dark fw_bold">單一價格</h3>
+          <p class="font_16 text_left">
             無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。
           </p>
         </li>
         <li class="col-3">
-          <span class="material-icons-outlined icons mb-2"> schedule </span>
-          <h3 class="font-24 mb-1">20 分鐘即可取件</h3>
-          <p class="font-16">
+          <span
+            class="material-icons-outlined icons mb_2 text_color-primary-dark"
+          >
+            schedule
+          </span>
+          <h3 class="font_24 mb_1 text_color-primary-dark fw_bold">
+            20 分鐘即可取件
+          </h3>
+          <p class="font_16 text_left">
             為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快
             20 分鐘即可完成。
           </p>
         </li>
         <li class="col-3">
-          <span class="material-icons-outlined icons mb-2">
+          <span
+            class="material-icons-outlined icons mb_2 text_color-primary-dark"
+          >
             favorite_border
           </span>
-          <h3 class="font-24 mb-1">安心售後服務</h3>
-          <p class="font-16">
+          <h3 class="font_24 mb_1 text_color-primary-dark fw_bold">
+            安心售後服務
+          </h3>
+          <p class="font_16 text_left">
             我們提供長達 120
             天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。
           </p>
         </li>
         <li class="col-3">
-          <span class="material-icons-outlined icons mb-2"> voicemail </span>
-          <h3 class="font-24 mb-1">關於鏡片</h3>
-          <p class="font-16">
+          <span
+            class="material-icons-outlined icons mb_2 text_color-primary-dark"
+          >
+            voicemail
+          </span>
+          <h3 class="font_24 mb_1 text_color-primary-dark fw_bold">關於鏡片</h3>
+          <p class="font_16 text_left">
             使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。
           </p>
         </li>
@@ -58,124 +88,163 @@ current: index
   </div>
 
   <!-- classic-series -->
-  <div class="container classic-series layout-padding">
-    <h2 class="font-48 fw-bold text-center mb-5">經典系列鏡框</h2>
-    <ul>
-      <li class="mb-4">
-        <div class="classic-img">
-          <img src="./assets/images/product-1.png" alt="product-1" />
-        </div>
-        <div class="slogn">
-          <span class="material-icons-outlined font-48"> auto_awesome </span>
-          <h3 class="font-48">optical</h3>
-        </div>
-      </li>
-      <li class="row-reverse mb-4">
-        <div class="classic-img">
-          <img src="./assets/images/product-2.png" alt="product-2" />
-        </div>
-        <div class="slogn">
-          <span class="material-icons-outlined font-48"> light_mode </span>
-          <h3 class="font-48">sunglasses</h3>
-        </div>
-      </li>
-      <li>
-        <div class="classic-img">
-          <img src="./assets/images/product-3.png" alt="product-3" />
-        </div>
-        <div class="slogn">
-          <span class="material-icons-outlined font-48"> flash_on</span>
-          <h3 class="font-48">functional</h3>
-        </div>
-      </li>
-    </ul>
+  <div class="layout_padding">
+    <section class="container classic">
+      <h2 class="main_title">經典系列鏡框</h2>
+      <ul>
+        <li class="d_flex flex_align-items-center mb_3">
+          <div class="classic__img">
+            <img src="./assets/images/product-1.png" alt="product-1" />
+          </div>
+          <div class="slogn text_color-primary d_flex flex_align-items-center">
+            <span class="material-icons-outlined font_48"> auto_awesome </span>
+            <h3 class="ml_1 font_48 fw_black fontStyle_italic">optical</h3>
+          </div>
+        </li>
+        <li class="d_flex flex_align-items-center row-reverse mb_3">
+          <div class="classic__img">
+            <img src="./assets/images/product-2.png" alt="product-2" />
+          </div>
+          <div class="slogn text_color-primary d_flex flex_align-items-center">
+            <span class="material-icons-outlined font_48"> light_mode </span>
+            <h3 class="ml_1 font_48 fw_black fontStyle_italic">sunglasses</h3>
+          </div>
+        </li>
+        <li class="d_flex flex_align-items-center">
+          <div class="classic__img">
+            <img src="./assets/images/product-3.png" alt="product-3" />
+          </div>
+          <div class="slogn text_color-primary d_flex flex_align-items-center">
+            <span class="material-icons-outlined font_48"> flash_on</span>
+            <h3 class="ml_1 font_48 fw_black fontStyle_italic">functional</h3>
+          </div>
+        </li>
+      </ul>
+    </section>
   </div>
-
   <!-- co-branded -->
-  <div class="co-branded layout-padding">
+  <div class="co-branded layout_padding">
     <div class="container">
-      <h2 class="font-48 fw-bold mb-5">聯名設計鏡框</h2>
-      <div class="row">
-        <div class="co-branded-left">
-          <div class="mask"></div>
-          <h3 class="font-72 fw-bold">Double A+</h3>
-        </div>
-        <div class="co-branded-right">
-          <div class="mask"></div>
-          <h3 class="font-72 fw-bold">YOUTH</h3>
-        </div>
-      </div>
+      <h2 class="main_title text_white">聯名設計鏡框</h2>
+      <ul class="row d_flex flex_wrap flex_justify-space-between">
+        <li class="co-branded__item">
+          <img
+            src="./assets/images/product-8.png"
+            class="co-branded__img"
+            alt="product-8"
+          />
+          <h3 class="font_72 fw_bold text_color-primary text_center">
+            Double A+
+          </h3>
+        </li>
+        <li class="co-branded__item">
+          <img
+            src="./assets/images/product-9.png"
+            class="co-branded__img"
+            alt="product-8"
+          />
+          <h3 class="font_72 fw_bold text_color-primary text_center">YOUTH</h3>
+        </li>
+      </ul>
     </div>
   </div>
 
   <!-- recommend  -->
-  <div class="container recommend layout-padding">
-    <h2 class="font-48 fw-bold mb-5">顧客推薦</h2>
-    <div class="row">
-      <div class="card">
-        <div class="card-header">
-          <img src="./assets/images/rec-1.png" alt="rec-1" />
-        </div>
-        <div class="card-body">
-          <div class="card-content">
-            <h4 class="mb-1">Jessy</h4>
-            <p class="card-text">眼鏡品質優良，下次還會想來這邊購買！</p>
+  <div class="layout_padding">
+    <div class="container recommend">
+      <h2 class="main_title">顧客推薦</h2>
+      <div class="row d_flex flex_wrap flex_justify-space-between">
+        <div class="recommend__card">
+          <div class="recommend__card--header">
+            <img src="./assets/images/rec-1.png" alt="rec-1" />
           </div>
-          <p class="card-footer">2021/06/20</p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <img src="./assets/images/rec-2.png" alt="rec-1" />
-        </div>
-        <div class="card-body">
-          <div class="card-content">
-            <h4 class="mb-1">凱倫</h4>
-            <p class="card-text">
-              做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！
-            </p>
+          <div
+            class="
+              recommend__card--body
+              d_flex
+              flex_column flex_justify-space-between
+            "
+          >
+            <div class="card__content">
+              <h4 class="mb_1 font_14 text_gray-600">Jessy</h4>
+              <p class="text_gray-600">眼鏡品質優良，下次還會想來這邊購買！</p>
+            </div>
+            <p class="font_14 text_gray-400">2021/06/20</p>
           </div>
-          <p class="card-footer">2021/04/18</p>
         </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <img src="./assets/images/rec-3.png" alt="rec-1" />
-        </div>
-        <div class="card-body">
-          <div class="card-content">
-            <h4 class="mb-1">悠悠</h4>
-            <p class="card-text">
-              謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！
-            </p>
+        <div class="recommend__card">
+          <div class="recommend__card--header">
+            <img src="./assets/images/rec-2.png" alt="rec-2" />
           </div>
-          <p class="card-footer">2020/12/25</p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <img src="./assets/images/rec-4.png" alt="rec-1" />
-        </div>
-        <div class="card-body">
-          <div class="card-content">
-            <h4 class="mb-1">Kyuan</h4>
-            <p class="card-text">服務很好，品質沒有任何問題，非常喜歡。</p>
+          <div
+            class="
+              recommend__card--body
+              d_flex
+              flex_column flex_justify-space-between
+            "
+          >
+            <div class="card__content">
+              <h4 class="mb_1 font_14 text_gray-600">凱倫</h4>
+              <p class="text_gray-600">
+                做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！
+              </p>
+            </div>
+            <p class="font_14 text_gray-400">2021/04/18</p>
           </div>
-          <p class="card-footer">2020/10/31</p>
+        </div>
+        <div class="recommend__card">
+          <div class="recommend__card--header">
+            <img src="./assets/images/rec-3.png" alt="rec-3" />
+          </div>
+          <div
+            class="
+              recommend__card--body
+              d_flex
+              flex_column flex_justify-space-between
+            "
+          >
+            <div class="card__content">
+              <h4 class="mb__1 font_14 text_gray-600">悠悠</h4>
+              <p class="text_gray-600">
+                謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！
+              </p>
+            </div>
+            <p class="font_14 text_gray-400">2020/12/25</p>
+          </div>
+        </div>
+        <div class="recommend__card">
+          <div class="recommend__card--header">
+            <img src="./assets/images/rec-4.png" alt="rec-4" />
+          </div>
+          <div
+            class="
+              recommend__card--body
+              d_flex
+              flex_column flex_justify-space-between
+            "
+          >
+            <div class="card__content">
+              <h4 class="mb_1 font_14 text_gray-600">Kyuan</h4>
+              <p class="text_gray-600">
+                服務很好，品質沒有任何問題，非常喜歡。
+              </p>
+            </div>
+            <p class="font_14 text_gray-400">2020/10/31</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
   <!-- contact -->
-  <div class="bg-primary-light layout-padding">
+  <div class="bg_primary-light layout_padding">
     <div class="contact">
-      <h2 class="font-48 fw-bold text-center mb-3">聯絡我們</h2>
-      <p class="font-20">
+      <h2 class="main_title text_black">聯絡我們</h2>
+      <p class="font_20 contact__subtitle">
         我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。
       </p>
       <form class="form">
-        <div class="form-group mb-2">
+        <div class="form-group mb_2">
           <label for="name">姓名</label>
           <input
             type="text"
@@ -185,7 +254,7 @@ current: index
             placeholder="陳小明"
           />
         </div>
-        <div class="form-group mb-2">
+        <div class="form-group mb_2">
           <label for="phone">聯絡電話</label>
           <input
             type="text"
@@ -195,7 +264,7 @@ current: index
             placeholder="0912-345-678"
           />
         </div>
-        <div class="form-group mb-2">
+        <div class="form-group mb_2">
           <label for="email">電子郵件</label>
           <input
             type="text"
@@ -205,17 +274,16 @@ current: index
             placeholder="example@email.com"
           />
         </div>
-        <div class="form-group mb-2">
+        <div class="form-group mb_2">
           <label for="opinion">意見反應</label>
           <textarea
             name="opinion"
             id="opinion"
             class="textarea"
             placeholder="請輸入您的意見"
-            
           ></textarea>
         </div>
-        <div class="form-group checkbox-gruop mb-5">
+        <div class="form-group checkbox-gruop mb_5">
           <input type="checkbox" name="agree" id="agree" class="checkbox" />
 
           <label for="agree" class="check-label"
@@ -223,7 +291,7 @@ current: index
           >
         </div>
         <div class="form-group submit-button">
-          <input type="button" class="submit font-16" value="確認送出" />
+          <input type="button" class="submit font_16" value="確認送出" />
         </div>
       </form>
     </div>

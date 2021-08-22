@@ -1,0 +1,70 @@
+// text
+.text {
+  &_center {
+    text-align: center;
+  }
+
+  &_left {
+    text-align: left;
+  }
+
+  &_right {
+    text-align: right;
+  }
+
+  &_decoration-none {
+    text-decoration: none;
+  }
+
+  // text color
+  &_color-primary {
+    color: $color_primary;
+  }
+
+  &_color-primary-dark {
+    color: $color_primary_dark;
+  }
+
+  &_white {
+    color: $white;
+  }
+  &_black {
+    color: $black;
+  }
+
+  // 灰階
+  // 100: #f2f2f2;
+  // 200: #DCDCDC;
+  // 300: #6C6C6C;
+  // 400: #707070;
+  // 500: #555555;
+  // 600: #212529;
+  // 700: #0A0A0A;
+  &_gray-100 {
+    color: $gray-100;
+  }
+
+  &_gray-200 {
+    color: $gray-200;
+  }
+
+  &_gray-300 {
+    color: $gray-300;
+  }
+
+  &_gray-400 {
+    color: $gray-400;
+  }
+
+  &_gray-500 {
+    color: $gray-500;
+  }
+
+  &_gray-600 {
+    color: $gray-600;
+  }
+
+  &_gray-700 {
+    color: $gray-700;
+  }
+}

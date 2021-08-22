@@ -1,0 +1,18 @@
+.sunglasses__content--item {
+  width: 31%;
+  margin-bottom: 104px;
+  @include pad {
+    width: 48%;
+    margin-bottom: 72px;
+  }
+  @include mobile {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  &:nth-child(n + 4) {
+    @include mobile {
+      display: none;
+    }
+  }
+}

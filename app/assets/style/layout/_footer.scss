@@ -1,72 +1,146 @@
 .footer {
-  background: $color_primary;
   padding: 44px 0 39px 0;
 
-  .footer-link {
-    display: flex;
+  @include pad {
+    padding: 38px 0 32px 0;
+  }
+
+  @include mobile {
+    padding: 25px 0;
+  }
+}
+
+.footer__content {
+  @include mobile {
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    align-items: start;
+  }
+}
+
+.footer__content--menu {
+  margin-bottom: 36px;
+  @include mobile {
+    display: none;
+  }
+}
+
+.footer__menu--item-link {
+  padding: 12px 24px;
+  display: block;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+li:first-child .footer__menu--item-link {
+  padding-left: 0;
+}
+
+.footer__content--social-media {
+  margin-bottom: 36px;
+
+  li {
+    margin-left: 32px;
+
+    @include pad {
+      margin-left: 24px;
+    }
+    .social-media--icon {
+      &:hover {
+        transform: scale(1.1);
+      }
+      @include pad {
+        img {
+          max-width: 24px;
+        }
+      }
+    }
+  }
+}
+
+.footer__link--contact {
+  width: 100%;
+
+  .contact__tel {
+    margin-bottom: 16px;
+    @include pad {
+      margin-bottom: 12px;
+    }
+    @include mobile {
+      margin-bottom: 6px;
+    }
+  }
+  .contact__text {
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 36px;
-
-    .nav {
-      display: flex;
-
-      li {
-        margin-right: 48px;
-
-        a {
-          color: #fff;
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-      }
+    &:hover {
+      text-decoration: underline;
     }
 
-    .social-media {
-      display: flex;
+    @include pad {
+      font-size: 20px;
+    }
 
-      li {
-        margin-left: 32px;
-
-        a:hover {
-          transform: scale(1.1);
-        }
-      }
+    @include mobile {
+      font-size: 16px;
     }
   }
+  .contact__icon {
+    width: 48px;
+    height: 48px;
 
-  .footer-contact {
-    li {
-      display: flex;
-      
-      a {
-        color:#fff;
-        margin-left: 22px;
+    @include pad {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
 
-        &:hover {
-          text-decoration: underline;
-        }
-      }
+    @include mobile {
+      width: 20px;
+      height: 20px;
+      margin-right: 4px;
     }
   }
+}
 
-  .copyright {
-    display: flex;
-    justify-content: space-between;
-    color: #fff;
+.footer__statement{
+  padding-top: 32px;
+  border-top: 1px solid $white;
 
-    .terms {
-      display: flex;
+  @include pad {
+    padding-top: 24px;
+  }
 
-      a {
-        color: #fff;
-        margin-left: 48px;
+  @include mobile {
+    padding-top: 16px;
+    flex-wrap: wrap;
+  }
+}
+.footer__statement--copyright {
+  @include mobile {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+.footer__statement--terms {
+  li {
+    display: inline-block;
 
-        &:hover {
-          text-decoration: underline;
-        }
-      }
+    @include mobile {
+      display: block;
+    }
+  }
+  .terms__link {
+    margin-left: 48px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    @include mobile {
+      font-family: $font-noto;
+      margin-left: 0;
+      padding: 8px 0;
     }
   }
 }

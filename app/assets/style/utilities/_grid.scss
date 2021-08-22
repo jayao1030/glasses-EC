@@ -1,0 +1,32 @@
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @include pad {
+    max-width: 100%;
+    padding: 0 39px;
+  }
+
+  @include mobile {
+    padding: 0 15px;
+  }
+}
+
+.col {
+  &_1 {
+    max-width: 100%;
+  }
+
+  &_2 {
+    max-width: 50%;
+  }
+
+  &_3 {
+    max-width: 33.3333%;
+  }
+
+  &_4 {
+    max-width: 25%;
+  }
+}

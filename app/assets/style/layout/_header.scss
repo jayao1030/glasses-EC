@@ -1,25 +1,52 @@
-.header {
-  background: $color_primary;
-  height: 108px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 88px;
-  padding-right: 56px;
+.header__navbar {
+  padding: 0 56px 0 88px;
 
-    .nav {
-      display: flex;
-      li {
-        a {
-          color:#fff;
-          padding: 32px;
-          transition: all .3s;
-          &:hover {
-            transform: scale(1.1);
-            background: darken($color_primary , 5%);
-          }
-        }
-      }
-      
+  @include pad {
+    padding: 0 7px 0 39px;
+  }
+
+  @include mobile {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+}
+.header__navbar--logo {
+  background: url(../images/logo.png) no-repeat center / cover ;
+  display: block;
+  width: 80px;
+  height: 48px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-indent: 101%;
+
+  @include mobile {
+    width: 48px;
+    height: 29px;
+    margin: 10px auto;
+  }
+}
+
+.header__navbar--nav {
+  @include mobile {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .nav__item {
+    @include mobile {
+      width: 50%;
+      flex-wrap: wrap;
+      text-align: center;
+      border: 1px solid $white;
     }
+    .nav__item--link {
+      padding: 38px 32px 41px;
+      transition: all 0.3s;
+      &:hover {
+        background: darken($color_primary, 5%);
+      }
+      @include mobile {
+        padding: 8px 0;
+      }
+    }
+  }
 }

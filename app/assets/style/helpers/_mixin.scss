@@ -1,3 +1,12 @@
-.bg-primary-light {
-  background: $color_primary_light;
-}
+
+@mixin pad {
+  @media (max-width: 992px) {
+    @content
+  }
+};
+
+@mixin mobile {
+  @media (max-width: 767px) {
+    @content
+  }
+};
